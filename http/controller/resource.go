@@ -155,7 +155,7 @@ func (ResourceController) Modify(ctx echo.Context) error {
 		if err == logic.NotModifyAuthorityErr {
 			return ctx.String(http.StatusForbidden, "没有权限修改")
 		}
-		return fail(ctx, 2, "内部服务错误，请稍候再试！")
+		return fail(ctx, 2, "内部服务错误，请稍候再试！!")
 	}
 
 	return success(ctx, nil)
